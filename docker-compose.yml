@@ -40,6 +40,11 @@ services:
     volumes:
       - ./config:/etc/nginx/conf.d
       - ./src:/src
-#  adminer:
-#    image: adminer
+  adminer:
+    image: adminer
+    container_name: admin_db
+    ports:
+      - 8080:8080
+
+
 
